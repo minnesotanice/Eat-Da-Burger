@@ -1,0 +1,47 @@
+
+<div class="container">
+  <form class="create-form">
+    <div class="row">
+
+      <div class="col">
+
+        <div class="form-group text-center text-md-left">
+  
+          <input type="text" id="create-new-burger" name="burger_name" placeholder="Name-Da-Burger">
+
+          <button type="submit">Add-Da-Burger</button>
+
+        </div>
+
+                <h2 class="text-center text-md-left">Burgers To Eat</h2>
+
+        <ul>
+          {{#each burgers}}
+            {{#unless eaten}}
+              {{> burgers/burger-eaten-block eaten=true}}
+            {{/unless}}
+          {{/each}}
+        </ul>
+
+        <h2 class="text-center text-md-left">Eaten Burgers</h2>
+
+        <ul>
+          {{#each burgers}}
+            {{#if eaten}}
+              {{> burgers/burger-block eaten=false}}
+            {{/if}}
+          {{/each}}
+        </ul>
+
+      </div>
+      <div class="col">
+
+        <img src="assets/images/burger.png"> 
+        
+
+      </div>
+ 
+  </form>
+  </div>
+
+</div>

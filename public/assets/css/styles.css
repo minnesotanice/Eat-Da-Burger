@@ -1,0 +1,31 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    background-color: black;
+    background-image: url("../images/grill-flames.jpg");
+   background-repeat: no-repeat;
+   background-position: bottom;
+   color: white;
+}
+
+h1, h2 {
+    text-shadow: 2px 2px #000;
+}
+
+h1 {
+    font-family: 'Shrikhand', cursive;
+    line-height: 3em;
+}
+
+h2 {
+    font-family: 'Shrikhand', cursive;
+    margin-top: 1em;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    min-width: 330px;
+}
